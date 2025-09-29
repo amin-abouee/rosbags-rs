@@ -68,7 +68,7 @@ pub struct QosProfile {
 
 /// QoS History policy
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-#[serde(rename_all = "lowercase")]
+#[serde(rename_all = "snake_case")]
 pub enum QosHistory {
     SystemDefault,
     KeepLast,
@@ -78,7 +78,7 @@ pub enum QosHistory {
 
 /// QoS Reliability policy
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-#[serde(rename_all = "lowercase")]
+#[serde(rename_all = "snake_case")]
 pub enum QosReliability {
     SystemDefault,
     Reliable,
@@ -89,7 +89,7 @@ pub enum QosReliability {
 
 /// QoS Durability policy
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-#[serde(rename_all = "lowercase")]
+#[serde(rename_all = "snake_case")]
 pub enum QosDurability {
     SystemDefault,
     TransientLocal,
@@ -100,7 +100,7 @@ pub enum QosDurability {
 
 /// QoS Liveliness policy
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-#[serde(rename_all = "lowercase")]
+#[serde(rename_all = "snake_case")]
 pub enum QosLiveliness {
     SystemDefault,
     Automatic,
@@ -114,9 +114,9 @@ pub enum QosLiveliness {
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, Default)]
 pub struct QosTime {
     /// Seconds component
-    pub sec: i32,
+    pub sec: i64,
     /// Nanoseconds component
-    pub nsec: u32,
+    pub nsec: u64,
 }
 
 /// Information about a topic in the bag
