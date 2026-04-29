@@ -1,5 +1,8 @@
 # rosbags-rs
 
+> ⚠️ **Notice: This repository is archived.**
+> The code has been merged into a monorepo. Active development now takes place at [amin-abouee/apex-solver/crates/apex-io](https://github.com/amin-abouee/apex-solver/crates/apex-io).
+
 [![CI](https://github.com/your-org/rosbags-rs/workflows/CI/badge.svg)](https://github.com/your-org/rosbags-rs/actions)
 [![Crates.io](https://img.shields.io/crates/v/rosbags-rs.svg)](https://crates.io/crates/rosbags-rs)
 [![Documentation](https://docs.rs/rosbags-rs/badge.svg)](https://docs.rs/rosbags-rs)
